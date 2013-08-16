@@ -674,6 +674,10 @@ public:
     // High-dynamic range mode
     static const char LIGHTFX_HDR[];
 
+#ifdef HTC_CAMERA_HARDWARE
+    static const char KEY_FORCE_USE_AUDIO_ENABLED[];
+#endif
+
 private:
     DefaultKeyedVector<String8,String8>    mMap;
 };
